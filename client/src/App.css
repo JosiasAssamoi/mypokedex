@@ -56,6 +56,7 @@ h5 {
   cursor: pointer;
 }
 
+
 @keyframes rotation {
   from {
     transform: rotate(0deg);
@@ -78,4 +79,20 @@ h5 {
     transform: scale(1);
       opacity   : 1;
   }
+}
+#ModalImg{
+width: 50%;
+height: 50%;
+position: relative;
+-webkit-animation: ready 1s infinite; /* Safari 4.0 - 8.0 */
+animation: ready 1s infinite;
+
+
+}
+
+
+@keyframes ready {
+  0%   { left: 0px; top: 0px;}
+  50%  { left: 20px;}
+  100% { left: 0px; top: 0px;}
 }
