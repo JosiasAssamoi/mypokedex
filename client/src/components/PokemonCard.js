@@ -23,6 +23,9 @@ export default class PokemonCard extends Component {
 
   toggleShowModal(){
     //active la visible  du pokemonmodal qui sera crée dans la fonction createModal appelée juste après
+    let cri = new Audio(`https://play.pokemonshowdown.com/audio/cries/${this.props.details.nomen.toLowerCase().replace('.','')}.ogg`)
+    cri.volume =0.3
+    cri.play()
     this.setState({showModal:!this.showModal})
     // lorsque l'on va re ouvrir le modal alors qu'il etait deja fermé une fois une reference aura deja eté crée et il faudra re autoriser la visibilité
     if(this.modalref.current)

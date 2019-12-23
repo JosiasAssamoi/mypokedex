@@ -1,11 +1,32 @@
 .App {
   text-align: center;
   min-height: 100vh;
-
-  background: rgb(0,0,0);
-  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(235,71,71,1) 100%);
+  background: rgb(250,90,86);
+  background: linear-gradient(0deg, rgba(255,241,241,1) 0%, rgba(250,90,86,1)  100%);
+  
+  
 }
 
+.modal ,.fade,.show {
+  background : radial-gradient(circle,#0000009c -52%, transparent 349%) ;
+}
+
+.modal-content{
+  background: none!important;
+}
+.modal-header,.modal-content,.modal-footer{
+  color:white!important;
+
+  border: none!important;
+}
+
+.modal-title{
+  font-weight: bold;
+}
+
+.progress{
+  margin-bottom: 5%;
+}
 h5 {
   text-shadow: 0em 0.1em 0.3em #29202073;
 }
@@ -81,7 +102,7 @@ h5 {
   }
 }
 #ModalImg{
-width: 50%;
+width: 70%;
 height: 50%;
 position: relative;
 -webkit-animation: ready 1s infinite; /* Safari 4.0 - 8.0 */
