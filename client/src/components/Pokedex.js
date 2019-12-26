@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PokemonCard from './PokemonCard'
+import {Link} from 'react-router-dom'
 
 export default class Pokedex extends Component {
 
@@ -44,6 +45,7 @@ export default class Pokedex extends Component {
     }
 
 
+
     render() {
 
         const { pokemons } = this.state
@@ -51,6 +53,7 @@ export default class Pokedex extends Component {
 
         return (
 
+            
             <React.Fragment>
                 <div className="container col-lg-4 col-md-5 col-sm-6 rounded-pill bg-light mb-5">
                     <div className="col-xs-8 col-xs-offset-2 input-group">
@@ -69,7 +72,7 @@ export default class Pokedex extends Component {
                         <div className="col">
                             <div className="row">
                                 {pokemons.map(pokemon => {
-                                    return <PokemonCard key={pokemon.ndex} details={pokemon} />
+                                    return <Link to='/' key={pokemon.ndex} className=" col-lg-3 col-md-4 col-sm-5 mb-5"  style={{'cursor':'initial','textDecoration':'none',listStyle:'none',color:'black'}}><PokemonCard key={pokemon.ndex} details={pokemon} /></Link>
 
                                 })}
                             </div>
@@ -77,6 +80,7 @@ export default class Pokedex extends Component {
                     </div>
                 </div>
             </React.Fragment>
+     
         )
     }
 }

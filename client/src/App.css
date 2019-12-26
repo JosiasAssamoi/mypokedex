@@ -3,7 +3,7 @@
   min-height: 100vh;
   background: rgb(250,90,86);
   background: linear-gradient(0deg, rgba(255,241,241,1) 0%, rgba(250,90,86,1)  100%);
-  
+  background-size: contain;
   
 }
 
@@ -11,13 +11,21 @@
   background : radial-gradient(circle,#0000009c -52%, transparent 349%) ;
 }
 
+.modal-title{
+  color:white!important;
+}
 .modal-content{
+  
   background: none!important;
+  font-family: monospace;
 }
 .modal-header,.modal-content,.modal-footer{
-  color:white!important;
-
+  
   border: none!important;
+}
+
+.modal-dialog {
+    max-width: 50%!important;
 }
 
 .modal-title{

@@ -35,7 +35,7 @@ export default class PokemonCard extends Component {
 
   render() {
     return (
-      <div className=" col-lg-3 col-md-4 col-sm-5 mb-5">
+      <div >
       {/*On verifie letat du modal de la card on ne crée un Modal que lorsque l'on va cliquer sur l'img */}
         <figure><img id="animateImg" className="card-img-top " src={`https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${this.props.details.ndex}.png`} alt="Card cap" onClick={()=>this.toggleShowModal()} /></figure>
         {this.createModal()}
